@@ -4,20 +4,21 @@ version: 2.3.2
 homepage: https://github.com/Milad-Akarie/auto_route_library
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   build: ^2.1.0
-  source_gen: ^1.1.0
-  analyzer: ^2.2.0
+  source_gen: ^1.0.3
+  analyzer: '>=0.41.2 <2.0.0'
   path: ^1.8.0
   build_runner: ^2.1.2
   code_builder: ^4.1.0
   dart_style: ^2.1.0
   auto_route:
-    ^2.3.2
-#    path: ../auto_route
-
+    git:
+      url: https://github.com/madtocc/auto_route_library.git
+      ref: hotfix/flutter_2.2.3
+      path: auto_route/
 
 dev_dependencies:
   source_gen_test:
